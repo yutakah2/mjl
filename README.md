@@ -24,7 +24,7 @@
 | -------------------- | ------ | ------------------------- |
 | name                 | string | null: false               |
 | email                | string | unique: true, null: false |
-| password             | string | null: false               |
+| encrypted_password   | string | null: false               |
 
 # Association
 - has_many :articles
@@ -41,7 +41,7 @@
 | user_id       | integer    | null: false       | 
 | comment_id    | integer    | null: false       |
 | like_id       | integer    | null: false       |
-| calendars_id  | integer    | null: false       |
+| calendar_id   | integer    | null: false       |
 
 # Association
 - belongs_to :user
