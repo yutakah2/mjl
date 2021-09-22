@@ -17,12 +17,14 @@ div {
 
 body {
   font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN W3", sans-serif;
-  color: #3b4043;
 }
 
-li {
-  list-style: none;
+.main {
+  background-color: #3b4043;
 }
+/*li {
+  list-style: none;
+}*/
 
 img {
   max-width: 100%;
@@ -31,31 +33,28 @@ img {
 
 a {
   text-decoration: none;
-  color: #ffff;
+  color: chartreuse;
 }
-
 /* ヘッダー */
 
 .header {
-  background-color: #3b4043;
+  background-color: #000;
   padding: 20px 0;
-
 }
 .inner {
   width: 1024px;
-  margin: 0 auto;
+  margin: auto;
 }
+
 .nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .nav__btn{
   display: inline-block;
   padding: 0.4em 1.6em;
-  font-size: 0.8em;
   text-decoration: none;
   user-select: none;
   border-radius: 3px;
@@ -65,33 +64,32 @@ a {
   color: #fff;
   background: #87CEFA;
 }
-
-.nav__logout{
+/*.nav__logout{
   display: inline-block;
   padding: 0.4em 1.6em;
-  font-size: 0.8em;
-  color: #87CEFA;
   text-decoration: none;
   user-select: none;
-}
-.nav__logout:hover{
+  transition: 0.4s ease;
+}*/
+/*.nav__logout:hover{
   opacity: 0.5;
-}
+}*/
 
 /* フォーム周り */
-.form__wrapper{
+/*.form__wrapper{
   min-height: calc(100vh - 161px);
-}
+}*/
 
-.form__text {
+/*.form__text {
   width: 50%;
-}
+}*/
 
 .field{
   margin: 10px 0;
+  color: chartreuse;
 }
 
-.actions{
+.actions {
   margin-bottom: 40px;
 }
 
@@ -99,19 +97,10 @@ a {
   display: inline-block;
   padding: 0.4em 1.6em;
   font-size: 0.8em;
-  color: #fff;
-  text-decoration: none;
-  user-select: none;
-  background: #87CEFA;
-  border: 1px #87CEFA solid;
+  color: chartreuse;
+  background-color: #000;
+  border: 1px #999 solid;
   border-radius: 3px;
-  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 2px 0 rgba(0, 0, 0, 0.12);
-  transition: 0.2s ease;
-}
-
-.form__btn:hover {
-  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
-  cursor: pointer;
 }
 
 /* メイン */
@@ -132,6 +121,7 @@ a {
   justify-content: space-between;
   align-items: center;
   min-height: calc(100vh - 161px);
+  color: #000;
 }
 .card {
   width: calc((100% - 50px) / 3);
@@ -156,6 +146,20 @@ a {
   text-align: right;
   text-decoration: underline;
 }
+.search-form {
+  text-align: center;
+  padding-top: 32px;
+}
+.search-form .search-input {
+  width: 30%;
+  margin-right: 10px;
+}
+.search-form .search-btn {
+  width: 10%;
+  color: chartreuse;
+  background-color: #000;
+}
+
 
 /* 詳細ページ */
 .prototype__wrapper{
@@ -265,12 +269,13 @@ a {
 /* フッター */
 
 .footer {
-  background-color: #999;
+  background-color:  #000;
   padding: 10px 0;
 }
 .copyright {
+  background-color: #000;
   text-align: center;
-  color: #fff;
+  color: chartreuse;
   font-size: 10px;
 }
 
