@@ -14,4 +14,7 @@ class ArticlesController < ApplicationController
   end
 
   private
+  def article_params
+    params.require(:article).permit(:title, :text, :image).merge(user_id: current_user.id)
+  end
 end
