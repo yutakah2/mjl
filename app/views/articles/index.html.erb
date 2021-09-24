@@ -15,7 +15,8 @@
       </div>
     <%# // ログインしているときは上記を表示する %>
       <div class="card__wrapper">
-        <%#= render partial: 'prototype', collection: @prototype %>
+      <%#= image_tag article.image, class: 'article-image' if article.image.attached? %>
+        <%= render partial: 'article', collection: @article %>
       </div>
   </div>
 </main>

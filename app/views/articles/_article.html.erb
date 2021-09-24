@@ -1,0 +1,11 @@
+<div class="card">
+  <%= link_to image_tag(article.image, class: :card__img ), articles_path(article.id)%>
+  <div class="card__body">
+    <%= link_to article.title, articles_path(article.id), class: :card__title%>
+    <%#= article.title %>
+    <p class="card__summary">
+      <%= article.text %>
+    </p>
+    <%#= link_to article.user.name, user_path(article.user.id), class: :card__user %>
+  </div>
+</div>
