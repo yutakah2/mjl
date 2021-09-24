@@ -38,10 +38,7 @@
 | ------------- | ---------- | ----------------- |
 | title         | string     | null: false       |
 | text          | text       | null: false       |
-| user_id       | integer    | null: false       | 
-| comment_id    | integer    | null: false       |
-| like_id       | integer    | null: false       |
-| calendar_id   | integer    | null: false       |
+| user          | references | foreign_key: true | 
 
 # Association
 - belongs_to :user
