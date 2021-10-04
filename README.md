@@ -85,7 +85,7 @@
 
 
 
-## 実装予定の内容
+# 実装予定の内容
 ・ユーザー管理機能
 
 ・記事投稿機能
@@ -109,7 +109,7 @@
 | email                | string | unique: true, null: false |
 | encrypted_password   | string | null: false               |
 
-# Association
+### Association
 - has_many :articles
 - has_many :comments
 - has_many :likes
@@ -126,7 +126,7 @@
 | like_id       | integer    | null: false       |
 | calendar_id   | integer    | null: false       |
 
-# Association
+### Association
 - belongs_to :user
 - has_many :comments
 - belongs_to :calendar
@@ -140,7 +140,7 @@
 | user_id       | integer    | null: false       |
 | article_id    | integer    | null: false       |
 
-# Association
+### Association
 - belongs_to :user
 - belongs_to :article
 
@@ -151,15 +151,17 @@
 | user_id       | integer    | null: false       |
 | article_id    | integer    | null: false       |
 
-# Association
+### Association
 - belongs_to :user
 - belongs_to :article
+
+## calendars
 
 | Colum         | Type       | Options           |
 | ------------- | ---------- | ----------------- |
 | user_id       | integer    | null: false       |
 | article_id    | integer    | null: false       |
 
-# Association
+### Association
 - belongs_to :user
 - belongs_to :article
