@@ -3,7 +3,10 @@ class ArticlesController < ApplicationController
   def index
     query = "SELECT * FROM articles"
     @articles = Article.find_by_sql(query)
-    @article = Article.all.includes(:user).order('created_at DESC')
+
+    @article = Article.all
+    #render :show
+
   end
 
   def new
@@ -18,6 +21,12 @@ class ArticlesController < ApplicationController
       render :new
     end
   end
+
+
+  def show
+    @article = Article.find(params[:id])
+  end
+
 
   def search
     @articles = SearchArticlesService.search(params[:keyword])
