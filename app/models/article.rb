@@ -8,6 +8,7 @@ class Article < ApplicationRecord
     validates :image
   end
 
+
   def self.search(search)
     if search != ""
       Article.where('text LIKE(?)', "%#{search}%")
