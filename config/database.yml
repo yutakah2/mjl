@@ -52,3 +52,4 @@ production:
   database: mjl_production
   username: mjl
   password: <%= ENV['MJL_DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
